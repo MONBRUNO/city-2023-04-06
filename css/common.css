@@ -39,7 +39,6 @@ body {
 }
 
 .gnb li a {
-    background-color: red;
     display: block;
     padding: 10px 26px;
 }
