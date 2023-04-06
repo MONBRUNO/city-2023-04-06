@@ -64,6 +64,10 @@ body {
     gap: 30px;
 }
 
+.cards li {
+    position: relative;
+}
+
 .cards li:first-child {
     flex: 1;
 }
@@ -77,9 +81,36 @@ body {
     background-color: red;
 }
 
-.cards img {
+.cards .photo img {
     width: 100%;
     display: block;
     height: 100%;
     object-fit: cover;
+    filter: brightness(50%);
+}
+
+.cards .user {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards .user .profile {
+    width: 40px;
+    height: 40px;
+}
+
+.cards .user .profile img {
+    width: 100%;
+    display: block;
+    border-radius: 100%;
+}
+
+.cards .user .info {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
 }
